@@ -19,6 +19,9 @@ public class ResultErrors {
         errors.put("验证码号为空",4002);
         errors.put("access_token号为空",4002);
         errors.put("refresh_token号为空",4002);
+
+        errors.put("用户名不存在",5000);
+        errors.put("密码错误",5000);
     }
 
     private static final ResultErrors instance = new ResultErrors();

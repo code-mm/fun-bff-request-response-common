@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserLoginPhonenumberRequest extends BaseRequest {
-    private String username;
+    private String phone_number;
     private String verification_code;
 
 }
