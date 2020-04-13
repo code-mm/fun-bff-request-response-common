@@ -14,11 +14,11 @@ public class ResultErrors {
         errors.put("用户名为空",4000);
         errors.put("密码为空",4001);
         errors.put("手机号为空",4002);
-        errors.put("appid号为空",4002);
-        errors.put("appsecret号为空",4002);
+        errors.put("app_id号为空",4002);
+        errors.put("app_secret号为空",4002);
         errors.put("验证码号为空",4002);
-        errors.put("access_token号为空",4002);
-        errors.put("refresh_token号为空",4002);
+        errors.put("access_token为空",4002);
+        errors.put("refresh_token为空",4002);
 
         errors.put("用户名不存在",5000);
         errors.put("密码错误",5000);
