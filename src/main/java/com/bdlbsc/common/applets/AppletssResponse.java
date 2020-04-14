@@ -1,10 +1,7 @@
 package com.bdlbsc.common.applets;
 
 import com.bdlbsc.common.base.BaseResponse;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -12,6 +9,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper=false)
 public class AppletssResponse extends BaseResponse {
 
     private List<AppletsType> appletss;
