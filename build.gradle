@@ -23,14 +23,62 @@ dependencies {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository url: 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
-            pom.version = "latest"
-            pom.artifactId = "fun-bff-request-response-common"
-            pom.groupId = "com.bdlbsc"
+
+
+
+def local = false
+def snapshot = true
+
+if (local) {
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository url: 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+
+                if (snapshot) {
+
+                    pom.version = "latest-SNAPSHOT"
+                } else {
+                    pom.version = "latest"
+                }
+                pom.artifactId = "fun-bff-request-response-common"
+                pom.groupId = "com.bdlbsc"
+            }
+        }
+    }
+} else {
+    uploadArchives {
+        repositories.mavenDeployer {
+            repository(url: "http://nexus.mhw828.com:8081/repository/maven-releases") {
+                authentication(userName: "admin", password: "admindev")
+            }
+
+            snapshotRepository(url: "http://nexus.mhw828.com:8081/repository/maven-snapshots") {
+                authentication(userName: "admin", password: "admindev")
+            }
+
+            pom.project {
+                // 注意：【这里通过切换 versionName 的赋值来区分上传快照包还是正式包（snapshot 版本必须以 -SNAPSHOT 结尾）】
+                //version snapshotVersionName
+                //组 maven_pom_groupid
+                groupId "com.bdlbsc"
+                //项目名称
+                artifactId "fun-bff-request-response-common"
+                //  类型
+                packaging "jar"
+                // 描述
+                description ""
+                // 版本
+                if (snapshot) {
+                    version = "latest-SNAPSHOT"
+                } else {
+                    version = "latest"
+                }
+            }
         }
     }
 }
+
+
+
 
