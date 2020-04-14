@@ -26,8 +26,8 @@ targetCompatibility = 1.8
 
 
 
-def local = false
-def snapshot = true
+def local = true
+def snapshot = false
 
 if (local) {
     uploadArchives {
