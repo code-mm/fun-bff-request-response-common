@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserLoginPhonenumberRequestVerificationCodeRequest extends BaseRequest {
+public class
+UserLoginPhonenumberRequestVerificationCodeRequest extends BaseRequest {
     private String phone_number;
 }

@@ -20,7 +20,8 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 
 }
-
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 uploadArchives {
     repositories {
