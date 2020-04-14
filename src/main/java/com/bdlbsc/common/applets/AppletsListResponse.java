@@ -13,8 +13,4 @@ import lombok.NoArgsConstructor;
 public class AppletsListResponse extends BaseResponse {
 
 
-
-
-
-
 }
