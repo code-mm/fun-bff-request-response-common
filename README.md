@@ -8,3 +8,10 @@
 ## 统一响应结果
 
     com.bdlbsc.common.Result
+
+
+
+## 小程序列表
+
+- 请求用户版本
+

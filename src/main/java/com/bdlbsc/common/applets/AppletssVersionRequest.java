@@ -9,6 +9,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class AppletssRequest extends BaseRequest {
+public class AppletssVersionRequest extends BaseRequest {
     private String user_id;
 }
