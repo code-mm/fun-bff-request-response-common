@@ -11,5 +11,5 @@ import lombok.*;
 @EqualsAndHashCode(callSuper = false)
 public class AppletssVersionResponse extends BaseResponse {
     //版本
-    private Integer verwsion;
+    private Integer version;
 }

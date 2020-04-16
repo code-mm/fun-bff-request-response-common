@@ -13,5 +13,5 @@ import java.util.List;
 public class AppletssResponse extends BaseResponse {
     private List<AppletsType> appletss;
     //版本
-    private Integer verwsion;
+    private Integer version;
 }
