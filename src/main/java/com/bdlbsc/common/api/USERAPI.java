@@ -18,4 +18,7 @@ public interface USERAPI {
     String TOKEN_CHECK = "user/token/check";
     // 刷新token
     String TOKEN_REFRESH = "user/token/refresh";
+    // 获取用户信息
+    String USER_INFO = "user/info";
+
 }
