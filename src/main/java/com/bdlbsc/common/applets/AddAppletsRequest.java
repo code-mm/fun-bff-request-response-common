@@ -1,21 +1,22 @@
 package com.bdlbsc.common.applets;
 
+import com.bdlbsc.common.base.BaseRequest;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AppletsItem {
+public class AddAppletsRequest  extends BaseRequest {
 
-    // 名称
-    private String name;
-    // icon 地址
-    private String icon_url;
-    // 小程序id
-    private String id;
+    // 小程序ID
+    private String applets_id;
+
+
+
 
 }

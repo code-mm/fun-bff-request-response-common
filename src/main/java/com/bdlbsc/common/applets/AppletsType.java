@@ -14,7 +14,9 @@ import java.util.List;
 @NoArgsConstructor
 public class AppletsType {
 
-    private String type;
+    // 类别 eg : 组织架构
+    private String category;
+    // 类别下的项目 eg : 运营架构，政府架构
     private List<AppletsItem> item;
 
 
