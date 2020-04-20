@@ -6,7 +6,6 @@ import lombok.*;
 @Data
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class BannerRequest  extends BaseRequest {
 
