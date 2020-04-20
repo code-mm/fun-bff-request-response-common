@@ -1,15 +1,13 @@
 package com.bdlbsc.common.user;
 
 import com.bdlbsc.common.base.BaseRequest;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class UserLoginUsernameRequest extends BaseRequest {
 
 

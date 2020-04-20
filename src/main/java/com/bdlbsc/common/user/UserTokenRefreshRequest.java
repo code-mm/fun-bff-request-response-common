@@ -1,14 +1,12 @@
 package com.bdlbsc.common.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@EqualsAndHashCode(callSuper = false)
 public class UserTokenRefreshRequest {
 
     private String refresh_token;

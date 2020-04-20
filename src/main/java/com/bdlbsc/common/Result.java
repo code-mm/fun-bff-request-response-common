@@ -1,15 +1,13 @@
 package com.bdlbsc.common;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class Result<T> {
     // 业务逻辑错误编码
     private Integer code;

@@ -4,9 +4,9 @@ import com.bdlbsc.common.base.BaseRequest;
 import lombok.*;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @EqualsAndHashCode(callSuper = false)
 public class UserLoginPhonenumberRequest extends BaseRequest {
     private String phone_number;

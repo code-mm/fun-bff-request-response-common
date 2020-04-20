@@ -1,5 +1,12 @@
 package com.bdlbsc.common.im;
 
+import lombok.*;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class MessageImage {
 
     // 事件id

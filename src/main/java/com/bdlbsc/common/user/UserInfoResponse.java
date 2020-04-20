@@ -5,9 +5,9 @@ import com.bdlbsc.common.base.BaseResponse;
 import lombok.*;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @EqualsAndHashCode(callSuper = false)
 public class UserInfoResponse extends BaseResponse {
 

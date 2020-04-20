@@ -4,9 +4,9 @@ import com.bdlbsc.common.base.BaseRequest;
 import lombok.*;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @EqualsAndHashCode(callSuper = false)
 public class UserInfoRequest extends BaseRequest {
 
