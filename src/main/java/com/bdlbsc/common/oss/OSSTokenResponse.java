@@ -13,10 +13,10 @@ import lombok.NoArgsConstructor;
 public class OSSTokenResponse extends BaseResponse {
 
 
-    private String Expiration;
-    private String Access_Key_id;
-    private String Access_Key_Secret;
-    private String Security;
-    private String RequestId;
+    private String expiration;
+    private String access_key_id;
+    private String access_key_secret;
+    private String security;
+    private String requestid;
 
 }
