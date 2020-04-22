@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class OSSTokenRequest extends BaseRequest {
+public class AliyunOSSTokenRequest extends BaseRequest {
 
     private String userid;
 

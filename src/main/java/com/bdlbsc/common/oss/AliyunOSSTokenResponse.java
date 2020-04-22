@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class OSSTokenResponse extends BaseResponse {
+public class AliyunOSSTokenResponse extends BaseResponse {
 
 
     private String expiration;
