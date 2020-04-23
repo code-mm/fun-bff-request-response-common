@@ -21,4 +21,6 @@ public interface USERAPI {
     // 获取用户信息
     String USER_INFO = "user/info";
 
+    // 扫码登录
+    String USER_LOGIN_QRCODE = "user/login/qrcode";
 }
